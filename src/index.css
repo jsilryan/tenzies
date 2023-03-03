@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(18, 18, 65);
+  padding: 30px
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+* {
+  box-sizing: border-box;
+}
+
+.App {
+  position: relative;
+  background-color: #F5F5F5;
+  height: 91vh;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  justify-content: center;
+  flex-direction: column;
+
+}
+.die {
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+  box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.4);
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: white;
+}
+div > h2 {
+  font-weight: bolder;
+  font-size: 40px;
+}
+
+.Dice {
+  position: absolute;
+  display: grid;
+  grid-template: auto auto / repeat(5, 1fr);
+  gap: 25px;
+
+}
